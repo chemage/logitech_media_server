@@ -10,7 +10,7 @@ services:
       - /etc/localtime:/etc/localtime:ro
       - /etc/TZ:/etc/timezone:ro
     ports:
-      - 9002:9000/tcp
+      - 9002:9002/tcp
       - 9090:9090/tcp
       - 3483:3483/tcp
       - 3483:3483/udp
