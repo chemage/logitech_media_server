@@ -1,0 +1,20 @@
+version: '3'
+services:
+  lms:
+    container_name: lms
+    image: lmscommunity/logitechmediaserver
+    volumes:
+      - /volume1/data/backup/NAS1_LMS/config:/config:rw
+      - /volume1/data/music/unliked:/music:ro
+      - /volume1/data/backup/NAS1_LMS/playlist:/playlist:rw
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/TZ:/etc/timezone:ro
+    ports:
+      - 9002:9000/tcp
+      - 9090:9090/tcp
+      - 3483:3483/tcp
+      - 3483:3483/udp
+    environment:
+      - HTTP_PORT=9002
+      - TZ=Europe/Zurich
+    restart: always
