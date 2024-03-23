@@ -1,6 +1,11 @@
 # logitech_media_server
 Logitech Media Server Docker Compose for Synology NAS
 
+## Docker
+
+https://hub.docker.com/r/lmscommunity/logitechmediaserver
+
+
 ## Setup
 
 1. Add `lms CNAME nas1` in bind on RPi3.
